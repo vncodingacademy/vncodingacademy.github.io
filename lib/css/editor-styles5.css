@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+/* Variables */
+:root {
+    --editor-bg: #eee;
+    --editor-border: #3f87a6;
+}
+
+/* Reset Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    word-spacing: 2px;
+}
+p {
+    font-family: sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 12px;
+    height: 100%;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .topnav a img {
+    height: 30px;
+  }
+  .topnav .homepage {
+    padding: 0;
+    position: relative;
+    top: 15px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .introduction {
+    padding-top: 5px;
+    font-weight:300;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.lesson iframe {
+    width: 100%;
+    height: auto;
+}
+.lesson {
+    background-image: url("https://images.unsplash.com/photo-1614850523060-8da1d56ae167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjBsaWdodGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+.lesson_wrapper {
+    width: 50%;
+    padding-left: 15px;
+    border-right: 3px solid black;
+}
+.lesson_wrapper div h2 {
+    font-size: 1.5rem;
+}
+
+.lesson_wrapper p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.lesson_wrapper ul  {
+    position: relative;
+    left: 10px;
+    width: 95%
+}
+
+.lesson_example {
+    text-align: left;
+    font-weight: normal;
+    font-family: monospace;
+    background-color: rgb(33, 30, 47);
+    padding: 2rem;
+    padding-bottom: 4rem;
+    color: white;
+    width: 95%;
+    margin: auto;
+}
+.lesson_example div {
+    box-sizing: border-box;
+}
+
+span {
+    float: left;
+    font-size: 18px;
+}
+.highlight {
+    background-color: #eae9ed;
+    display: inline-block;
+}
+.lesson_description #italic {
+    display: inline-block;
+    font-style: italic;
+}
+h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+#big_hr {
+    width: 100%;
+    height:5px;
+    background-color: black;
+    position: relative;
+    left: 0;
+    padding-left:0;
+}
+.lesson_description {
+    padding-top: 3%;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.lesson_wrapper hr {
+    width: 50%;
+    position: relative;
+    left: 25%;
+
+}
+.lesson_wrapper .practice_title {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.lesson_wrapper .practice {
+    width: 100%;
+    margin: auto;
+}
+.practice p {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.practice #answer1, #answer2 {
+    display: none;
+    font-size: 18px;
+}
+
+.next_lesson button {
+    text-align: center;
+    color: white;
+    width: 95%;
+    height: 50px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    background-color: black;
+}
+
+.editor {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.editor .code_editor {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+}
+.editor iframe {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+.help {
+    width: 95%;
+    height: 5%;
+    position: relative;
+    margin: auto;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.console {
+    color: #FE8973;
+    font-size: 18px;
+}
+.log {
+    color: #84FFF5;
+    font-size: 18px;
+}
+
+.string {
+    color: #FEDF82;
+    font-size: 18px;
+}
+
+.number {
+    color: #FE8973;
+    font-size: 18px;
+}
+
+.comment {
+    color: #8E8F93;
+    font-size: 18px;
+}
+
+.lesson_example div[class=".string"] {
+    display: inline;
+}
+.lesson_example .inline {
+    display: inline;
+}
+.bracket {
+    color: white;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav a {
+        display: none;
+    }
+  }
+@media screen and (max-width: 1200px) and (min-width:600px) {
+    .topnav a {
+        padding: 20px 5px;
+    }
+    .topnav .homepage {
+        display: none;
+    }
+}
+@media screen and (min-width: 1300px) {
+    body, html {
+        font-size: 20px;
+    }
+    span {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .topnav a {
+        margin: 0 40px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .lesson_wrapper {
+        width: 100%;
+    }
+    .editor {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: none;
+        bottom: 0;
+    }
+    .topnav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    body, html, a {
+        font-size: 16px;
+    }
+    .lesson_description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .lesson_wrapper p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    span {
+        font-size: 14px;
+    }
+}

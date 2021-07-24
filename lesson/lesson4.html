@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/editor-styles4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IDE Online</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_wrapper">
+            <div class="topnav" id="myTopnav">
+                <a href="index_2.html" class="homepage"><img src="coding.png"></a>
+                <a href="#home" class="active">Trang Chủ</a>
+                <a href="#lesson">Khóa Học</a>
+                <a href="#forum">Diễn Đàn</a>
+                <a href="#user">User</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <div class="lesson_wrapper">
+            <p class="introduction">Giới thiệu về JavaScript</p>
+            <h1>Bài học 4</h1>
+            <h1 class="lesson_title"><strong>Các phép tính</strong></h1>
+            <hr id="big_hr">
+            <div class="lesson_description">Cũng như trong toán học, JavaScript cũng có các dấu cộng trừ nhân chia để lập trình viên thực hiện phép tính.</div>
+            <div class="lesson_description">Trong JavaScript, có những phép tính như sau:</div>
+            <ul class="lesson_description" id="operator">
+                <li>Cộng: <div class="highlight">+</div></li>
+                <li>Trừ: <div class="highlight">−</div> </li>
+                <li>Nhân: <div class="highlight">*</div></li>
+                <li>Chia: <div class="highlight">/</div> </li>
+                <li>Lấy số dư: <div class="highlight">%</div></li>
+            </ul>
+            <div class="lesson_description">Sau đây là một số các ví dụ: </div>
+            <ol class="lesson_description">
+                <li>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Đáp án: 46</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="number">12</span>
+                            <span class="operator">+</span>
+                            <span class="number">34</span>
+                            <span class="bracket">)</span>
+                        </div>
+                    </code><br>
+                </li>
+                <li>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Đáp án: 63</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="number">92</span>
+                            <span class="operator">-</span>
+                            <span class="number">29</span>
+                            <span class="bracket">)</span>
+                        </div>
+                    </code><br>
+                </li>
+                <li>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Đáp án: 30</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="number">5</span>
+                            <span class="operator">*</span>
+                            <span class="number">6</span>
+                            <span class="bracket">)</span>
+                        </div>
+                    </code><br>
+                </li>
+                <li>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Đáp án: 3</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="number">12</span>
+                            <span class="operator">/</span>
+                            <span class="number">4</span>
+                            <span class="bracket">)</span>
+                        </div>
+                    </code><br>
+                </li>
+                <li>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Đáp án: 2</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="number">11</span>
+                            <span class="operator">%</span>
+                            <span class="number">3</span>
+                            <span class="bracket">)</span>
+                        </div>
+                    </code><br>
+                </li>
+            </ol>
+            
+            <br>
+           
+
+    
+            
+            <br><hr><br>
+            <p class="practice_title">Bài tập</p>
+            <br><br>
+            <div class="practice">
+                <div class="question1">
+                    <p>Hãy tính các phép tính sau:<br>
+                        1. 123456 + 987654<br>
+                        2. 97531 - 86420<br>
+                        3. 101 * 99<br>
+                        4. 111111 / 11
+                    </p><br>
+                    <button class="help" id="1">Trợ giúp</button>
+                    <br><br>
+                    <div class="practice_help lesson_example" id="answer1">Đáp án:<br>
+                        1. 1111110<br>
+                        2. 11111<br>
+                        3. 9999<br>
+                        4. 10101
+                    </div><br>
+                </div>
+                <div style="height: 10px"></div>
+                <hr><br>
+            </div>
+            <div class="next_lesson">
+                <button onclick="location.href = '/Users/ngadao/Desktop/projects/IDE_online/lesson/lesson5.html';" id="myButton" class="float-left submit-button" >Tiếp Theo</button>
+            </div>
+            <div style="height: 10px"></div>
+            
+        
+        </div>
+        
+    </div>
+    <div class="editor">
+        <iframe class="code-editor" src="https://replit.com/@HarryPham/Lesson4?lite=true" height="1000px" width="50%" frameborder="0" scrolling='no' sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f02mOEt11OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </div>
+    
+
+
+    <script src="../lib/js/editor4.js"></script>
+</body>
+</html>

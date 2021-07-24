@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/editor-styles5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IDE Online</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_wrapper">
+            <div class="topnav" id="myTopnav">
+                <a href="index_2.html" class="homepage"><img src="coding.png"></a>
+                <a href="#home" class="active">Trang Chủ</a>
+                <a href="#lesson">Khóa Học</a>
+                <a href="#forum">Diễn Đàn</a>
+                <a href="#user">User</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <div class="lesson_wrapper">
+            <p class="introduction">Giới thiệu về JavaScript</p>
+            <h1>Bài học 5</h1>
+            <h1 class="lesson_title"><strong>String (dãy kí tự)</strong></h1>
+            <hr id="big_hr">
+            <div class="lesson_description">Trong bài trước, chúng ta đã học về các phép tính, đặc biệt là dấu cộng (+). Ngoài tác dụng tính toán, dấu cộng (+) còn được dùng để nối 2 hoặc nhiều dãy kí tự.</div>
+            <div class="lesson_description">Chúng ta cùng xem xét các ví dụ sau:</div>
+            <ol class="lesson_description">
+                <li><br>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">//Sai</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="string">'</span>
+                            <span class="string">Hà Nội</span>
+                            <span class="string">'</span>
+                            <span class="operator">&nbsp+&nbsp</span>
+                            <span class="string">'</span>
+                            <span class="string">là</span>
+                            <span class="string"><pre> thủ</pre></span>
+                            <span class="string"><pre> đô</pre></span>
+                            <span class="string"><pre> của</pre></span>
+                            <span class="string"><pre> Việt</pre></span>
+                            <span class="string"><pre> Nam</pre></span>
+                            <span class="string">'</span>
+                            <span class="bracket">)</span><br><br>
+                            <div class="comment">//Đúng</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="string">Hà Nội</span>
+                            <span class="string">'</span>
+                            <span class="operator">&nbsp+&nbsp</span>
+                            <span class="string">'</span>
+                            <span class="string"><pre> là</pre></span>
+                            <span class="string"><pre> thủ</pre></span>
+                            <span class="string"><pre> đô</pre></span>
+                            <span class="string"><pre> của</pre></span>
+                            <span class="string"><pre> Việt</pre></span>
+                            <span class="string"><pre> Nam</pre></span>
+                            <span class="string">'</span>
+                            <span class="bracket">)</span><br>
+                        </div>
+                    </code><br>
+                </li>
+                
+            </ol>
+            
+            <br>
+            <div class="lesson_description"><strong>*Lưu ý:</strong> Phải có dấu cách ở cuối dãy kí tự thứ nhất hoặc ở đầu dãy kí tự thứ hai để khi nối hai kí tự này lại, chúng không bị dính vào nhau.</div>
+            <div class="lesson_description">Chúng ta có thể làm tương tự để kết hợp nhiều dãy kí tự</div>
+
+            <ol class="lesson_description">
+                <li><br>
+                    <code>   
+                        <div class="lesson_example">
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="string">'</span>
+                            <span class="string">Covid-19</span>
+                            <span class="string">'</span>
+                            <span class="operator">&nbsp+&nbsp</span>
+                            <span class="string">'</span>
+                            <span class="string"><pre> là</pre></span>
+                            <span class="string"><pre> một</pre></span>
+                            <span class="string"><pre> loại</pre></span>
+                            <span class="string"><pre> vi-rút </pre></span>
+                            <span class="string">'</span>
+                            <span class="operator">&nbsp+&nbsp</span>
+                            <span class="string">'</span>
+                            <span class="string"><pre>cực</pre></span>
+                            <span class="string"><pre> kì</pre></span>
+                            <span class="string"><pre> nguy</pre></span>
+                            <span class="string"><pre> hiểm</pre></span>
+                            <span class="string">'</span>
+                            <span class="bracket">)</span><br>
+                        </div>
+                    </code><br>
+                </li>
+                
+            </ol>
+            <div class="lesson_description">Trong JavaScript, nếu muốn biết độ dàì của một dãy kí tự, chúng ta sử dụng thuộc tính <strong>.length</strong></div>
+            <ol class="lesson_description">
+                <li><br>
+                    <code>   
+                        <div class="lesson_example">
+                            <div class="comment">// Kết quả: 10</div>
+                            <span class="console">console</span>
+                            <span>.</span>
+                            <span class="log">log</span>
+                            <span class="bracket">(</span>
+                            <span class="string">'</span>
+                            <span class="string">JavaScript</span>
+                            <span class="string">'</span>
+                            <span>.</span>
+                            <span class="log">length</span>
+                            <span class="bracket">)</span><br>
+                        </div>
+                    </code><br>
+                </li>
+                
+            </ol>
+            
+    
+            
+            <br><hr><br>
+            <p class="practice_title">Bài tập</p>
+            <br><br>
+            <div class="practice">
+                <div class="question1">
+                    <p>1. Hãy sử dụng cách bạn vừa học để kết hợp nhiều câu thành một đoạn văn tùy ý.
+                    </p><br>
+                    <button class="help" id="1">Trợ giúp</button>
+                    <br><br>
+                    <div class="practice_help lesson_example" id="answer1">Thử nối các câu sau: <br>
+                        1. Bên hàng xóm tôi có cái hang của Dế Choắt.<br>
+                        2. Dế Choắt là tên tôi đã đặt cho nó một cách chế giễu và trịch thượng thế.<br>
+                        3. Choắt nọ có lẽ cũng trạc tuổi tôi.<br>
+                        4. Nhưng vì Choắt bẩm sinh yếu đuối nên tôi coi thường và gã cũng sợ tôi lắm.<br>
+                        <em>Trích "Dế Mèn Phiêu Lưu Ký" - Tô Hoài</em><br>
+                    </div><br>
+                </div>
+                <div class="question2">
+                    <p>2. Tìm độ dài của những dãy kí tự sau:<br>
+                        • "Programming is fun"<br>
+                        • "Tôi ghét lập trình"<br>
+                    </p><br>
+                    <button class="help" id="2">Trợ giúp</button>
+                    <br><br>
+                    <div class="practice_help lesson_example" id="answer2">Đáp án: <br>
+                        • 18<br>
+                        • 18<br>
+                    </div><br>
+                </div>
+                <div style="height: 10px"></div>
+                <hr><br>
+            </div>
+            
+            <div class="next_lesson">
+                <button onclick="location.href = '/Users/ngadao/Desktop/projects/IDE_online/lesson/lesson6.html';" id="myButton" class="float-left submit-button" >Tiếp Theo</button>
+            </div>
+            <div style="height: 10px"></div>
+            
+        
+        </div>
+        
+    </div>
+    <div class="editor">
+        <iframe class="code-editor" src="https://replit.com/@HarryPham/Lesson5?lite=true" height="1000px" width="50%" frameborder="0" scrolling='no' sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f02mOEt11OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </div>
+    
+
+
+    <script src="../lib/js/editor5.js"></script>
+</body>
+</html>
