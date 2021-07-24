@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/editor-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IDE Online</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_wrapper">
+            <div class="topnav" id="myTopnav">
+                <a href="index_2.html" class="homepage"><img src="coding.png"></a>
+                <a href="#home" class="active">Trang Chủ</a>
+                <a href="#lesson">Khóa Học</a>
+                <a href="#forum">Diễn Đàn</a>
+                <a href="#user">User</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <div class="lesson_wrapper">
+            <p class="introduction">Giới thiệu về JavaScript</p>
+            <h1>Bài học 1</h1>
+            <h1 class="lesson_title"><strong>Dòng lệnh console.log()</strong></h1>
+            <hr id="big_hr">
+            <div class="lesson_description"><div class="highlight">Console</div> là một bảng hiển thị các thông báo quan trọng, chẳng hạn như lỗi hay đầu ra của đoạn code, cho các nhà phát triển. Theo mặc định, phần lớn công việc mà máy tính thực hiện với đoạn code của chúng ta sẽ không được hiển thị. Nếu chúng ta muốn thấy mọi thứ xuất hiện trên màn hình của mình, chúng ta có thể in vào <div class="highlight">console</div>.</div>
+            <div class="lesson_description">Trong Javascript, <div class="highlight">console</div> là một đối tượng chứa các dữ liệu và hàm mà chúng ta có thể sử dụng. <div class="highlight">.log()</div> là một hàm trong số đó. Khi chúng ta dùng <strong><em>console.log()</em></strong>, những thứ ở trong dấu ngoặc đơn sẽ được hiển thị ở console.</div>
+            <br>
+            <p>Ví dụ:</p>
+            <br>
+            <p>Đầu vào là:</p>
+            <code>
+                <div class="lesson_example">
+                    <span class="console">console</span>
+                    <span>.</span>
+                    <span class="log">log</span>
+                    <span>(</span>
+                    <span class="string">"</span>
+                    <span class="string">Xin Chào</span>
+                    <span class="string">"</span>
+                    <span>)</span>
+                </div>
+            </code>
+            <p>Sẽ cho ra kết quả:</p>
+            <code>
+                <div class="lesson_example">
+                    <span>Xin Chào</span>
+                </div>
+            </code>
+
+    
+            <br><hr><br>
+            <p>Ngoài ra, dòng lệnh console.log() còn có thể hiển thị được số. <br><strong>*Lưu ý khi hiển thị một số thì không cần dấu ngoặc kép ("")</strong></p>
+            <br><br>
+            <p>Đoạn code như sau:</p>
+            <code>
+                <div class="lesson_example">
+                    <span class="console">console</span>
+                    <span>.</span>
+                    <span class="log">log</span>
+                    <span>(</span>
+                    <span class="number">2021</span>
+                    <span>)</span>
+                </div>
+            </code>
+            <p>Sẽ cho ra kết quả</p>
+            <code>
+                <div class="lesson_example">
+                    <span>2021</span>
+                </div>
+            </code>
+            <br><hr><br>
+            <p class="practice_title">Bài tập</p>
+            <br><br>
+            <div class="practice">
+                <div class="question1">
+                    <p>1. Hãy viết tên của bạn bằng dòng lệnh console.log()</p><br>
+                    <button class="help" id="1">Trợ giúp</button>
+                    <br><br>
+                </div>
+                <div class="question2">
+                    <p>2. Hãy viết năm sinh của bạn bằng dòng lệnh console.log()</p><br>
+                    <button class="help" id="2">Trợ giúp</button>
+                    <br><br>
+                </div>
+                <div class="question3">
+                    <p>3. Hãy viết một đoạn giới thiệu về bạn</p><br>
+                    <button class="help" id="3">Trợ giúp</button>
+                    <br><br>
+                </div>
+                <div style="height: 10px"></div>
+                <hr><br>
+            </div>
+            <div class="next_lesson">
+                <button onclick="location.href = '/Users/ngadao/Desktop/projects/IDE_online/lesson/lesson2.html';" id="myButton" class="float-left submit-button" >Tiếp Theo</button>
+            </div>
+            <div style="height: 10px"></div>
+            
+        
+        </div>
+        
+    </div>
+    <div class="editor">
+        <iframe class="code-editor" src="https://replit.com/@HarryPham/Lesson1?lite=true" height="1000px" width="50%" frameborder="0" scrolling='no' sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f02mOEt11OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </div>
+    
+
+
+    <script src="../lib/js/editor1.js"></script>
+</body>
+</html>
